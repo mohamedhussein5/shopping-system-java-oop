@@ -1,0 +1,453 @@
+<mxfile host="Electron">
+  <diagram name="Shopping Transaction Flowchart" id="ff">
+    <mxGraphModel dx="1746" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="ff-0" />
+        <mxCell id="ff-1" parent="ff-0" />
+        <mxCell id="ff-start" parent="ff-1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E6E6E6;" value="Start" vertex="1">
+          <mxGeometry height="44" width="160" x="220" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-inID" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Enter customer ID" vertex="1">
+          <mxGeometry height="50" width="190" x="205" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-look" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Look up customer&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;register.startTransaction(id)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="205" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dF" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Customer&lt;br&gt;found?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-errC" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FDE7E7;" value="Display “Customer&lt;br&gt;not found”" vertex="1">
+          <mxGeometry height="50" width="200" x="460" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dR" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Try again?" vertex="1">
+          <mxGeometry height="90" width="150" x="485" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-endC" parent="ff-1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E6E6E6;" value="End (cancelled)" vertex="1">
+          <mxGeometry height="44" width="160" x="480" y="533" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-show" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Display customer name&lt;br&gt;and membership type" vertex="1">
+          <mxGeometry height="50" width="190" x="205" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-cart" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Create empty ShoppingCart&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;new ShoppingCart(customer)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="205" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-prod" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Display products and prices&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;inventory.displayProducts()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="197" x="201" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-inP" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Enter product ID&lt;br&gt;and quantity" vertex="1">
+          <mxGeometry height="50" width="190" x="205" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dE" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Product&lt;br&gt;exists?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dQ" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Quantity&lt;br&gt;≥ 1?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dS" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Enough&lt;br&gt;stock?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-errA" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FDE7E7;" value="Display error&lt;br&gt;message&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;catch (ShoppingException e)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="230" x="465" y="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-addI" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Add item to cart&lt;br&gt;(stock not yet deducted)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;cart.addItem(product, qty)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="190" x="205" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-view" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Display cart items&lt;br&gt;and subtotal&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;cart.viewItems()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="190" x="205" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dRm" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Remove an&lt;br&gt;item?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-inR" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Enter product ID&lt;br&gt;to remove" vertex="1">
+          <mxGeometry height="50" width="190" x="485" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-rem" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Remove item from cart&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;cart.removeItem(id)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="485" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dMore" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Add more&lt;br&gt;items?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="1415" as="geometry" />
+        </mxCell>
+        <mxCell id="9yzPTtFnEKYXn73v4PP--0" edge="1" parent="ff-1" source="ff-dEm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ff-sub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dEm" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Cart&lt;br&gt;empty?" vertex="1">
+          <mxGeometry height="90" width="150" x="225" y="1535" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-sub" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Calculate subtotal&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;cart.calculateSubtotal()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="630" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-disc" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Each DiscountPolicy calculates a&lt;br&gt;discount; keep the larger one&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;findBestDiscount()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="200" x="625" y="1815" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-tot" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Total = subtotal − discount&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;calculateTotal()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="630" y="1915" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-bill" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Display bill:&lt;br&gt;subtotal, discount, total&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;displayBill()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="190" x="630" y="2000" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-meth" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Choose payment method" vertex="1">
+          <mxGeometry height="50" width="190" x="630" y="2095" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dM" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Cash or&lt;br&gt;card?" vertex="1">
+          <mxGeometry height="90" width="150" x="650" y="2175" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-cash" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Enter amount tendered&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;new CashPayment(...)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="415" y="2295" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-card" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Enter card type&lt;br&gt;and card number&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;new CardPayment(...)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="230" x="830" y="2290" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-pay" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Process payment&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;payment.pay()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="630" y="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dP" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Payment&lt;br&gt;successful?" vertex="1">
+          <mxGeometry height="90" width="150" x="650" y="2490" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-errP" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FDE7E7;" value="Display “Payment&lt;br&gt;failed” + reason" vertex="1">
+          <mxGeometry height="50" width="250" x="860" y="2510" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-dT" parent="ff-1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFF6D5;" value="Try another&lt;br&gt;payment?" vertex="1">
+          <mxGeometry height="90" width="150" x="910" y="2605" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-endP" parent="ff-1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E6E6E6;" value="End (cancelled)" vertex="1">
+          <mxGeometry height="44" width="160" x="905" y="2733" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-ded" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Deduct stock from inventory&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;inventory.deductStock(items)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="630" y="2625" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-rec" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Create Receipt&lt;br&gt;(own copy of items, next number)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;new Receipt(...)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="201" x="624" y="2715" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-prt" parent="ff-1" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;size=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E3F2FD;" value="Print receipt&lt;br&gt;(change shown for cash)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;receipt.printReceipt()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="61" width="190" x="630" y="2815" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-clr" parent="ff-1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#FFFFFF;" value="Clear cart&lt;br&gt;&lt;font style=&quot;font-size:10px&quot; color=&quot;#555555&quot; face=&quot;Courier New&quot;&gt;cart.clear()&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="630" y="2910" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-end" parent="ff-1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;strokeColor=#333333;fillColor=#E6E6E6;" value="End (transaction complete)" vertex="1">
+          <mxGeometry height="44" width="183" x="633" y="2998" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x1" edge="1" parent="ff-1" source="ff-start" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-inID" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x2" edge="1" parent="ff-1" source="ff-inID" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-look" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x3" edge="1" parent="ff-1" source="ff-look" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dF" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x4" edge="1" parent="ff-1" source="ff-dF" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-show" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x5" connectable="0" parent="ff-x4" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x6" edge="1" parent="ff-1" source="ff-dF" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0500;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-errC" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x7" connectable="0" parent="ff-x6" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x8" edge="1" parent="ff-1" source="ff-errC" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dR" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x9" edge="1" parent="ff-1" source="ff-dR" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9474;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-inID" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="450" />
+              <mxPoint x="700" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x10" connectable="0" parent="ff-x9" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x11" edge="1" parent="ff-1" source="ff-dR" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-endC" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x12" connectable="0" parent="ff-x11" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x13" edge="1" parent="ff-1" source="ff-show" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-cart" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x14" edge="1" parent="ff-1" source="ff-cart" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-prod" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x15" edge="1" parent="ff-1" source="ff-prod" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-inP" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x16" edge="1" parent="ff-1" source="ff-inP" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dE" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x17" edge="1" parent="ff-1" source="ff-dE" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dQ" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x18" connectable="0" parent="ff-x17" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x19" edge="1" parent="ff-1" source="ff-dQ" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dS" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x20" connectable="0" parent="ff-x19" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x21" edge="1" parent="ff-1" source="ff-dS" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-addI" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x22" connectable="0" parent="ff-x21" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x23" edge="1" parent="ff-1" source="ff-dE" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.2391;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-errA" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x24" connectable="0" parent="ff-x23" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x25" edge="1" parent="ff-1" source="ff-dQ" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.2391;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-errA" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x26" connectable="0" parent="ff-x25" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x27" edge="1" parent="ff-1" source="ff-dS" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0435;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-errA" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x28" connectable="0" parent="ff-x27" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x29" edge="1" parent="ff-1" source="ff-errA" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.9565;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9474;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-inP" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1045" />
+              <mxPoint x="700" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x30" edge="1" parent="ff-1" source="ff-addI" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-view" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x31" edge="1" parent="ff-1" source="ff-view" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dRm" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x32" edge="1" parent="ff-1" source="ff-dRm" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0526;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-inR" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x33" connectable="0" parent="ff-x32" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x34" edge="1" parent="ff-1" source="ff-inR" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-rem" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x35" edge="1" parent="ff-1" source="ff-rem" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9474;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-view" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1435" />
+              <mxPoint x="700" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x36" edge="1" parent="ff-1" source="ff-dRm" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dMore" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x37" connectable="0" parent="ff-x36" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x38" edge="1" parent="ff-1" source="ff-dMore" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0507;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-prod" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="1460" />
+              <mxPoint x="60" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x39" connectable="0" parent="ff-x38" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x40" edge="1" parent="ff-1" source="ff-dMore" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dEm" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x41" connectable="0" parent="ff-x40" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x42" edge="1" parent="ff-1" source="ff-dEm" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0507;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-prod" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="1580" />
+              <mxPoint x="60" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x43" connectable="0" parent="ff-x42" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x46" edge="1" parent="ff-1" source="ff-sub" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-disc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x47" edge="1" parent="ff-1" source="ff-disc" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-tot" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x48" edge="1" parent="ff-1" source="ff-tot" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-bill" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x49" edge="1" parent="ff-1" source="ff-bill" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-meth" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x50" edge="1" parent="ff-1" source="ff-meth" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dM" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x51" edge="1" parent="ff-1" source="ff-dM" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-cash" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x52" connectable="0" parent="ff-x51" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Cash" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="-20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x53" edge="1" parent="ff-1" source="ff-dM" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-card" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="2220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x54" connectable="0" parent="ff-x53" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Card" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x55" edge="1" parent="ff-1" source="ff-cash" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-pay" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2375" />
+              <mxPoint x="725" y="2375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x56" edge="1" parent="ff-1" source="ff-card" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-pay" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="2375" />
+              <mxPoint x="725" y="2375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x57" edge="1" parent="ff-1" source="ff-pay" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dP" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x58" edge="1" parent="ff-1" source="ff-dP" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0400;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-errP" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x59" connectable="0" parent="ff-x58" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x60" edge="1" parent="ff-1" source="ff-errP" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-dT" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x61" edge="1" parent="ff-1" source="ff-dT" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9474;entryY=0.5000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-meth" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="2650" />
+              <mxPoint x="1140" y="2120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x62" connectable="0" parent="ff-x61" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="20" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x63" edge="1" parent="ff-1" source="ff-dT" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-endP" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x64" connectable="0" parent="ff-x63" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="No" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x65" edge="1" parent="ff-1" source="ff-dP" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-ded" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x66" connectable="0" parent="ff-x65" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="10" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ff-x67" edge="1" parent="ff-1" source="ff-ded" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-rec" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x68" edge="1" parent="ff-1" source="ff-rec" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-prt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x69" edge="1" parent="ff-1" source="ff-prt" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-clr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x70" edge="1" parent="ff-1" source="ff-clr" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;strokeColor=#333333;fontFamily=Arial;fontSize=11;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;entryPerimeter=0;" target="ff-end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x71" parent="ff-1" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontStyle=1;" value="SHOPPING SYSTEM – COMPLETE TRANSACTION FLOWCHART" vertex="1">
+          <mxGeometry height="22" width="476" x="406" y="9" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x72" parent="ff-1" style="shape=note;size=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;fontFamily=Arial;fontSize=10;fillColor=#FFFDE7;strokeColor=#999999;" value="Polymorphism: payment.pay() runs the&lt;br&gt;CashPayment or CardPayment version&lt;br&gt;chosen at runtime." vertex="1">
+          <mxGeometry height="54" width="230" x="395" y="2565" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x73" parent="ff-1" style="shape=note;size=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;fontFamily=Arial;fontSize=10;fillColor=#FFFDE7;strokeColor=#999999;" value="If payment fails, nothing changes:&lt;br&gt;no stock is deducted and no receipt&lt;br&gt;is created." vertex="1">
+          <mxGeometry height="54" width="230" x="915" y="2835" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x74" parent="ff-1" style="shape=note;size=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;fontFamily=Arial;fontSize=10;fillColor=#FFFDE7;strokeColor=#999999;" value="Shapes: rounded = start/end, rectangle = process,&lt;br&gt;parallelogram = input/output, diamond = decision,&lt;br&gt;red = error message. Grey text = method in the&lt;br&gt;UML class diagram." vertex="1">
+          <mxGeometry height="66" width="300" x="395" y="3125" as="geometry" />
+        </mxCell>
+        <mxCell id="ff-x75" parent="ff-1" style="shape=note;size=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;fontFamily=Arial;fontSize=10;fillColor=#FFFDE7;strokeColor=#999999;" value="Input checks: if letters are typed instead of a number,&lt;br&gt;Java&amp;#x27;s InputMismatchException is caught and the&lt;br&gt;user is asked again (not drawn, for clarity)." vertex="1">
+          <mxGeometry height="54" width="310" x="715" y="3125" as="geometry" />
+        </mxCell>
+        <mxCell id="9yzPTtFnEKYXn73v4PP--1" parent="ff-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;No&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="360" y="1550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
